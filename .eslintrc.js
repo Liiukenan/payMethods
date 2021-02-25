@@ -6,9 +6,9 @@ module.exports = {
   'globals':{
     "clientWindow":true,
     "":true,
-    "showIncentiveVideoAd":true,
-    "shareWechatMoments":true,
-    "jsInteractive":true
+    Frames:true,
+    jsInteractive:true,
+    globalThis:true
   },
   'extends': [
     'plugin:vue/essential',
@@ -17,7 +17,8 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    "no-unused-vars": 'off'
+    "no-unused-vars": 'off',
+    "eslint-disable-next-line":0
   },
 
   parserOptions: {

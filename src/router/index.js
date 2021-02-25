@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+const Home=()=>import("../views/Home.vue");
 const routerPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {
   return routerPush.call(this, location).catch(error=> error)
@@ -16,10 +16,10 @@ const routes = [
     }
   },
   {
-    path: "/details",
-    name: "details",
+    path: "/information",
+    name: "information",
     component: () =>
-      import("../components/Details.vue"),
+      import("../components/Information.vue"),
     meta: {
         keepAlive: true // 需要缓存
     }
@@ -30,5 +30,11 @@ const router = new VueRouter({
   // mode:'history',
   routes:routes
 });
+
+router.beforeEach((to,from,next)=>{
+  // console.log(to)
+  // console.log(from)
+  next({path:'/'})
+})
 
 export default router;

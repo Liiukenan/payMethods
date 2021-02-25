@@ -3,6 +3,7 @@ import Vue from "vue";
 Vue.use(VueI18n)
 import data from './langData'
 import {getQueryVariable} from './util'
+
 let countryCodeArr=['en','ar','de','es','fr','hi','in','tr',"ko","zh","ja"];
 let countryCode=getQueryVariable("lang") || 'en';
 let countryResult=null;

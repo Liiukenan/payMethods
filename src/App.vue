@@ -1,13 +1,13 @@
 <template>
   <div id="app" :class="ar">
           <keep-alive>
-              <router-view ></router-view>
+              <router-view></router-view>
           </keep-alive>
   </div>
 </template>
 <script>
 import Loading from './components/Loading';
-import { mapState,mapMutations,mapActions} from 'vuex';
+import { mapState,mapMutations,mapActions } from 'vuex';
 import Vue from "vue";
 export default {
   data() {
@@ -40,12 +40,8 @@ export default {
         console.log(error);
       }
     }
+     
   }
 };
 </script>
-<style lang="stylus">
-#app{
-  min-height 100vh
-}
 
-</style>

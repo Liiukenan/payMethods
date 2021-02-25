@@ -9,6 +9,12 @@ export function getQueryVariable(variable) {
     }
     return false;
   }
+
+export const symbol={
+  'USD':'$',
+  'SAR':'ر.س',
+  'INR':'₹'
+}
 export function getTime(area){
   let n;
   switch (area) {

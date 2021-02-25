@@ -14,10 +14,10 @@ module.exports = {
       },
       buildCommand: "test",
       localPath: "dist",
-      remotePath: "/data/www/liv_chat_list"
+      remotePath: "/data/www/paymentMethod"
     }
   ]
 };
 // fjpublish env -s
 
-// fjpublish env -s --nobackup
+// // fjpublish env -s --nobackup
