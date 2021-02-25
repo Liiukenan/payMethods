@@ -19,10 +19,10 @@ if (process.env.NODE_ENV === 'production') {
     axios.defaults.baseURL = getpkg(); //路径
   } else {
     //test 测试环境
-    axios.defaults.baseURL = 'https://www.fastmock.site/mock/efdd8393c708477a63a3461fb7d77ed0/paythods'; //路径
+    axios.defaults.baseURL = 'http://54.222.148.146:81/'; //路径
   }
 } else { //dev 开发环境 
-  axios.defaults.baseURL = 'https://www.fastmock.site/mock/efdd8393c708477a63a3461fb7d77ed0/paythods';
+  axios.defaults.baseURL = 'http://54.222.148.146:81/';
   // axios.defaults.baseURL = getpkg(pkgName);
 }
 
