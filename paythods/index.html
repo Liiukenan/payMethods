@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel=icon href=favicon.ico><script src=https://cdn.checkout.com/js/framesv2.min.js></script><title>myapp</title><link href=css/chunk-650857c1.a7b3f761.css rel=prefetch><link href=css/chunk-d3652506.a36d1311.css rel=prefetch><link href=js/chunk-1e6c8402.a938e33e.js rel=prefetch><link href=js/chunk-650857c1.2a12ac83.js rel=prefetch><link href=js/chunk-d3652506.cd8e42a3.js rel=prefetch><link href=css/app.287190a9.css rel=preload as=style><link href=js/app.c138d758.js rel=preload as=script><link href=js/chunk-vendors.7fb32dea.js rel=preload as=script><link href=css/app.287190a9.css rel=stylesheet></head><body><noscript><strong>We're sorry but myapp doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>window.onload = function () {
+      document.addEventListener('touchstart', function (event) {
+
+        if (event.touches.length > 1) {
+
+          event.preventDefault();
+
+        }
+
+      })
+
+      var lastTouchEnd = 0;
+      document.addEventListener('touchend', function (event) {
+
+        var now = (new Date()).getTime();
+
+        if (now - lastTouchEnd <= 300) {
+
+          event.preventDefault();
+
+        }
+        lastTouchEnd = now;
+
+      }, false)
+      document.documentElement.style.overflow = "hidden";
+    }</script><script src=js/chunk-vendors.7fb32dea.js></script><script src=js/app.c138d758.js></script></body></html>
